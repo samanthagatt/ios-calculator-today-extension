@@ -10,7 +10,7 @@ import UIKit
 import NotificationCenter
 import RPN_Calculator
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDelegate {
     
     // MARK: - UIViewController
     
@@ -18,6 +18,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         
         self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
+        textField.delegate = self
     }
     
     
@@ -38,6 +39,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             thirdStackView.isHidden = false
             fourthStackView.isHidden = false
         }
+    }
+    
+    
+    // MARK: - UITextFieldDelegate
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.selectAll(textField)
     }
     
     
