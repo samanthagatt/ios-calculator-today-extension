@@ -11,12 +11,17 @@ import NotificationCenter
 import RPN_Calculator
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    // MARK: - UIViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
+    
+    
+    // MARK: - NCWidgetProviding
     
     func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
         switch activeDisplayMode {
@@ -34,19 +39,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             fourthStackView.isHidden = false
         }
     }
-        
-    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        
-        
-        completionHandler(NCUpdateResult.newData)
-    }
     
     
-    @IBOutlet var textField: UITextField!
-    @IBOutlet weak var firstStackView: UIStackView!
-    @IBOutlet weak var secondStackView: UIStackView!
-    @IBOutlet weak var thirdStackView: UIStackView!
-    @IBOutlet weak var fourthStackView: UIStackView!
+    // MARK: - Private Properties
     
     private let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -77,42 +72,50 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
     
-    @IBAction func numberButtonTapped(_ sender: UIButton) {
+    // MARK: - Outlets
+    
+    @IBOutlet private var textField: UITextField!
+    @IBOutlet private weak var firstStackView: UIStackView!
+    @IBOutlet private weak var secondStackView: UIStackView!
+    @IBOutlet private weak var thirdStackView: UIStackView!
+    @IBOutlet private weak var fourthStackView: UIStackView!
+    
+    @IBAction private func numberButtonTapped(_ sender: UIButton) {
         try? digitAccumulator.add(digit: .number(sender.tag))
     }
     
-    @IBAction func decimalButtonTapped(_ sender: UIButton) {
+    @IBAction private func decimalButtonTapped(_ sender: UIButton) {
         try? digitAccumulator.add(digit: .decimalPoint)
     }
     
-    @IBAction func returnButtonTapped(_ sender: UIButton) {
+    @IBAction private func returnButtonTapped(_ sender: UIButton) {
         if let value = digitAccumulator.value() {
             calculator.push(number: value)
         }
         digitAccumulator.clear()
     }
     
-    @IBAction func divideButtonTapped(_ sender: UIButton) {
+    @IBAction private func divideButtonTapped(_ sender: UIButton) {
         returnButtonTapped(sender)
         calculator.push(operator: .divide)
     }
     
-    @IBAction func multiplyButtonTapped(_ sender: UIButton) {
+    @IBAction private func multiplyButtonTapped(_ sender: UIButton) {
         returnButtonTapped(sender)
         calculator.push(operator: .multiply)
     }
     
-    @IBAction func subtractButtonTapped(_ sender: UIButton) {
+    @IBAction private func subtractButtonTapped(_ sender: UIButton) {
         returnButtonTapped(sender)
         calculator.push(operator: .subtract)
     }
     
-    @IBAction func plusButtonTapped(_ sender: UIButton) {
+    @IBAction private func plusButtonTapped(_ sender: UIButton) {
         returnButtonTapped(sender)
         calculator.push(operator: .add)
     }
     
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+    private func textFieldShouldClear(_ textField: UITextField) -> Bool {
         calculator.clear()
         digitAccumulator.clear()
         return true
