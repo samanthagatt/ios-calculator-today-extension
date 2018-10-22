@@ -7,44 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		223D9BFF217E52ED00EC1B8E /* RPN_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9BFC217E52DF00EC1B8E /* RPN_Calculator.framework */; };
-		223D9C00217E52ED00EC1B8E /* RPN_Calculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9BFC217E52DF00EC1B8E /* RPN_Calculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		223D9C1E217E55FD00EC1B8E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9C09217E535C00EC1B8E /* NotificationCenter.framework */; };
+		223D9C21217E55FD00EC1B8E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D9C20217E55FD00EC1B8E /* TodayViewController.swift */; };
+		223D9C24217E55FD00EC1B8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223D9C22217E55FD00EC1B8E /* MainInterface.storyboard */; };
+		223D9C28217E55FD00EC1B8E /* RPN Calculator Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 223D9C1D217E55FD00EC1B8E /* RPN Calculator Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		223D9C4B217E588200EC1B8E /* RPN_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9C48217E586F00EC1B8E /* RPN_Calculator.framework */; };
+		223D9C4C217E588200EC1B8E /* RPN_Calculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 223D9C48217E586F00EC1B8E /* RPN_Calculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D61CEADA2152AED600D47806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CEAD92152AED600D47806 /* AppDelegate.swift */; };
 		D61CEAE12152AEDC00D47806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61CEAE02152AEDC00D47806 /* Assets.xcassets */; };
 		D61CEAE42152AEDC00D47806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61CEAE22152AEDC00D47806 /* LaunchScreen.storyboard */; };
-		D61CEAEF2152AEDD00D47806 /* RPN_Calculator_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CEAEE2152AEDD00D47806 /* RPN_Calculator_AppTests.swift */; };
 		D61CEB1A2152BD8500D47806 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CEB182152BD8500D47806 /* CalculatorViewController.swift */; };
 		D61CEB1B2152BD8500D47806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61CEB192152BD8500D47806 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		223D9BFB217E52DF00EC1B8E /* PBXContainerItemProxy */ = {
+		223D9C26217E55FD00EC1B8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 223D9BF6217E52DE00EC1B8E /* RPN Calculator.xcodeproj */;
+			containerPortal = D61CEACE2152AED600D47806 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223D9C1C217E55FD00EC1B8E;
+			remoteInfo = "RPN Calculator Widget";
+		};
+		223D9C47217E586F00EC1B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 223D9C42217E586F00EC1B8E /* RPN Calculator.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D61CEAB22152AE1B00D47806;
+			remoteGlobalIDString = 223D9C37217E582900EC1B8E;
 			remoteInfo = "RPN Calculator";
 		};
-		223D9BFD217E52DF00EC1B8E /* PBXContainerItemProxy */ = {
+		223D9C49217E586F00EC1B8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 223D9BF6217E52DE00EC1B8E /* RPN Calculator.xcodeproj */;
+			containerPortal = 223D9C42217E586F00EC1B8E /* RPN Calculator.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D61CEABB2152AE1B00D47806;
 			remoteInfo = "RPN CalculatorTests";
 		};
-		223D9C01217E52ED00EC1B8E /* PBXContainerItemProxy */ = {
+		223D9C4D217E588200EC1B8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 223D9BF6217E52DE00EC1B8E /* RPN Calculator.xcodeproj */;
+			containerPortal = 223D9C42217E586F00EC1B8E /* RPN Calculator.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D61CEAB12152AE1B00D47806;
+			remoteGlobalIDString = 223D9C36217E582900EC1B8E;
 			remoteInfo = "RPN Calculator";
-		};
-		D61CEAEB2152AEDD00D47806 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D61CEACE2152AED600D47806 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D61CEAD52152AED600D47806;
-			remoteInfo = "RPN Calculator App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,21 +58,36 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				223D9C00217E52ED00EC1B8E /* RPN_Calculator.framework in Embed Frameworks */,
+				223D9C4C217E588200EC1B8E /* RPN_Calculator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223D9C18217E535C00EC1B8E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				223D9C28217E55FD00EC1B8E /* RPN Calculator Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		223D9BF6217E52DE00EC1B8E /* RPN Calculator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "RPN Calculator.xcodeproj"; path = "../../RPN Calculator/RPN Calculator.xcodeproj"; sourceTree = "<group>"; };
+		223D9C09217E535C00EC1B8E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		223D9C1D217E55FD00EC1B8E /* RPN Calculator Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RPN Calculator Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		223D9C20217E55FD00EC1B8E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		223D9C23217E55FD00EC1B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		223D9C25217E55FD00EC1B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223D9C42217E586F00EC1B8E /* RPN Calculator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "RPN Calculator.xcodeproj"; path = "../../RPN Calculator/RPN Calculator.xcodeproj"; sourceTree = "<group>"; };
 		D61CEAD62152AED600D47806 /* RPN Calculator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPN Calculator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61CEAD92152AED600D47806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61CEAE02152AEDC00D47806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D61CEAE32152AEDC00D47806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D61CEAE52152AEDC00D47806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D61CEAEA2152AEDD00D47806 /* RPN Calculator AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPN Calculator AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61CEAEE2152AEDD00D47806 /* RPN_Calculator_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPN_Calculator_AppTests.swift; sourceTree = "<group>"; };
 		D61CEAF02152AEDD00D47806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D61CEB182152BD8500D47806 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
@@ -77,18 +95,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		223D9C1A217E55FD00EC1B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223D9C1E217E55FD00EC1B8E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D61CEAD32152AED600D47806 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223D9BFF217E52ED00EC1B8E /* RPN_Calculator.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D61CEAE72152AEDD00D47806 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				223D9C4B217E588200EC1B8E /* RPN_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,16 +117,27 @@
 		223D9BF5217E52CB00EC1B8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				223D9BF6217E52DE00EC1B8E /* RPN Calculator.xcodeproj */,
+				223D9C42217E586F00EC1B8E /* RPN Calculator.xcodeproj */,
+				223D9C09217E535C00EC1B8E /* NotificationCenter.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		223D9BF7217E52DE00EC1B8E /* Products */ = {
+		223D9C1F217E55FD00EC1B8E /* RPN Calculator Widget */ = {
 			isa = PBXGroup;
 			children = (
-				223D9BFC217E52DF00EC1B8E /* RPN_Calculator.framework */,
-				223D9BFE217E52DF00EC1B8E /* RPN CalculatorTests.xctest */,
+				223D9C20217E55FD00EC1B8E /* TodayViewController.swift */,
+				223D9C22217E55FD00EC1B8E /* MainInterface.storyboard */,
+				223D9C25217E55FD00EC1B8E /* Info.plist */,
+			);
+			path = "RPN Calculator Widget";
+			sourceTree = "<group>";
+		};
+		223D9C43217E586F00EC1B8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				223D9C48217E586F00EC1B8E /* RPN_Calculator.framework */,
+				223D9C4A217E586F00EC1B8E /* RPN CalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				D61CEAD82152AED600D47806 /* RPN Calculator App */,
+				223D9C1F217E55FD00EC1B8E /* RPN Calculator Widget */,
 				223D9BF5217E52CB00EC1B8E /* Frameworks */,
 				D61CEAED2152AEDD00D47806 /* RPN Calculator AppTests */,
 				D61CEAD72152AED600D47806 /* Products */,
@@ -126,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D61CEAD62152AED600D47806 /* RPN Calculator App.app */,
-				D61CEAEA2152AEDD00D47806 /* RPN Calculator AppTests.xctest */,
+				223D9C1D217E55FD00EC1B8E /* RPN Calculator Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +187,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		223D9C1C217E55FD00EC1B8E /* RPN Calculator Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223D9C29217E55FD00EC1B8E /* Build configuration list for PBXNativeTarget "RPN Calculator Widget" */;
+			buildPhases = (
+				223D9C19217E55FD00EC1B8E /* Sources */,
+				223D9C1A217E55FD00EC1B8E /* Frameworks */,
+				223D9C1B217E55FD00EC1B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPN Calculator Widget";
+			productName = "RPN Calculator Widget";
+			productReference = 223D9C1D217E55FD00EC1B8E /* RPN Calculator Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D61CEAD52152AED600D47806 /* RPN Calculator App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D61CEAF32152AEDD00D47806 /* Build configuration list for PBXNativeTarget "RPN Calculator App" */;
@@ -164,34 +212,18 @@
 				D61CEAD32152AED600D47806 /* Frameworks */,
 				D61CEAD42152AED600D47806 /* Resources */,
 				223D9C03217E52ED00EC1B8E /* Embed Frameworks */,
+				223D9C18217E535C00EC1B8E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				223D9C02217E52ED00EC1B8E /* PBXTargetDependency */,
+				223D9C27217E55FD00EC1B8E /* PBXTargetDependency */,
+				223D9C4E217E588200EC1B8E /* PBXTargetDependency */,
 			);
 			name = "RPN Calculator App";
 			productName = "RPN Calculator App";
 			productReference = D61CEAD62152AED600D47806 /* RPN Calculator App.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D61CEAE92152AEDD00D47806 /* RPN Calculator AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D61CEAF62152AEDD00D47806 /* Build configuration list for PBXNativeTarget "RPN Calculator AppTests" */;
-			buildPhases = (
-				D61CEAE62152AEDD00D47806 /* Sources */,
-				D61CEAE72152AEDD00D47806 /* Frameworks */,
-				D61CEAE82152AEDD00D47806 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D61CEAEC2152AEDD00D47806 /* PBXTargetDependency */,
-			);
-			name = "RPN Calculator AppTests";
-			productName = "RPN Calculator AppTests";
-			productReference = D61CEAEA2152AEDD00D47806 /* RPN Calculator AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -203,12 +235,11 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Samantha Gatt";
 				TargetAttributes = {
-					D61CEAD52152AED600D47806 = {
+					223D9C1C217E55FD00EC1B8E = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					D61CEAE92152AEDD00D47806 = {
+					D61CEAD52152AED600D47806 = {
 						CreatedOnToolsVersion = 10.0;
-						TestTargetID = D61CEAD52152AED600D47806;
 					};
 				};
 			};
@@ -225,36 +256,44 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 223D9BF7217E52DE00EC1B8E /* Products */;
-					ProjectRef = 223D9BF6217E52DE00EC1B8E /* RPN Calculator.xcodeproj */;
+					ProductGroup = 223D9C43217E586F00EC1B8E /* Products */;
+					ProjectRef = 223D9C42217E586F00EC1B8E /* RPN Calculator.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				D61CEAD52152AED600D47806 /* RPN Calculator App */,
-				D61CEAE92152AEDD00D47806 /* RPN Calculator AppTests */,
+				223D9C1C217E55FD00EC1B8E /* RPN Calculator Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		223D9BFC217E52DF00EC1B8E /* RPN_Calculator.framework */ = {
+		223D9C48217E586F00EC1B8E /* RPN_Calculator.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = RPN_Calculator.framework;
-			remoteRef = 223D9BFB217E52DF00EC1B8E /* PBXContainerItemProxy */;
+			remoteRef = 223D9C47217E586F00EC1B8E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		223D9BFE217E52DF00EC1B8E /* RPN CalculatorTests.xctest */ = {
+		223D9C4A217E586F00EC1B8E /* RPN CalculatorTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "RPN CalculatorTests.xctest";
-			remoteRef = 223D9BFD217E52DF00EC1B8E /* PBXContainerItemProxy */;
+			remoteRef = 223D9C49217E586F00EC1B8E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		223D9C1B217E55FD00EC1B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223D9C24217E55FD00EC1B8E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D61CEAD42152AED600D47806 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,16 +304,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D61CEAE82152AEDD00D47806 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		223D9C19217E55FD00EC1B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223D9C21217E55FD00EC1B8E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D61CEAD22152AED600D47806 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,30 +324,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D61CEAE62152AEDD00D47806 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D61CEAEF2152AEDD00D47806 /* RPN_Calculator_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		223D9C02217E52ED00EC1B8E /* PBXTargetDependency */ = {
+		223D9C27217E55FD00EC1B8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 223D9C1C217E55FD00EC1B8E /* RPN Calculator Widget */;
+			targetProxy = 223D9C26217E55FD00EC1B8E /* PBXContainerItemProxy */;
+		};
+		223D9C4E217E588200EC1B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "RPN Calculator";
-			targetProxy = 223D9C01217E52ED00EC1B8E /* PBXContainerItemProxy */;
-		};
-		D61CEAEC2152AEDD00D47806 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D61CEAD52152AED600D47806 /* RPN Calculator App */;
-			targetProxy = D61CEAEB2152AEDD00D47806 /* PBXContainerItemProxy */;
+			targetProxy = 223D9C4D217E588200EC1B8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		223D9C22217E55FD00EC1B8E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				223D9C23217E55FD00EC1B8E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		D61CEAE22152AEDC00D47806 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -319,6 +359,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		223D9C2A217E55FD00EC1B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84AK8SAYG2;
+				INFOPLIST_FILE = "RPN Calculator Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamanthaGatt.Forex.ForexWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		223D9C2B217E55FD00EC1B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84AK8SAYG2;
+				INFOPLIST_FILE = "RPN Calculator Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamanthaGatt.Forex.ForexWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D61CEAF12152AEDD00D47806 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SamanthaGatt.RPN-Calculator-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamanthaGatt.Forex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,58 +544,25 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SamanthaGatt.RPN-Calculator-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamanthaGatt.Forex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D61CEAF72152AEDD00D47806 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84AK8SAYG2;
-				INFOPLIST_FILE = "RPN Calculator AppTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SamanthaGatt.RPN-Calculator-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPN Calculator App.app/RPN Calculator App";
-			};
-			name = Debug;
-		};
-		D61CEAF82152AEDD00D47806 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84AK8SAYG2;
-				INFOPLIST_FILE = "RPN Calculator AppTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SamanthaGatt.RPN-Calculator-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPN Calculator App.app/RPN Calculator App";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		223D9C29217E55FD00EC1B8E /* Build configuration list for PBXNativeTarget "RPN Calculator Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223D9C2A217E55FD00EC1B8E /* Debug */,
+				223D9C2B217E55FD00EC1B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D61CEAD12152AED600D47806 /* Build configuration list for PBXProject "RPN Calculator App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -532,15 +577,6 @@
 			buildConfigurations = (
 				D61CEAF42152AEDD00D47806 /* Debug */,
 				D61CEAF52152AEDD00D47806 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D61CEAF62152AEDD00D47806 /* Build configuration list for PBXNativeTarget "RPN Calculator AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D61CEAF72152AEDD00D47806 /* Debug */,
-				D61CEAF82152AEDD00D47806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
