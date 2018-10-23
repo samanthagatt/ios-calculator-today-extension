@@ -10,6 +10,8 @@ class CalculatorViewController: UIViewController, UITextFieldDelegate {
 	
 	@IBOutlet var textField: UITextField!
 	
+    private let groupUserDefaults = UserDefaults(suiteName: "group.com.SamanthaGatt.RPN_Calculator")!
+    
 	private let numberFormatter: NumberFormatter = {
 		let formatter = NumberFormatter()
 		formatter.allowsFloats = true
@@ -23,6 +25,7 @@ class CalculatorViewController: UIViewController, UITextFieldDelegate {
 		didSet {
 			if let value = calculator.topValue {
 				textField.text = numberFormatter.string(from: value as NSNumber)
+                groupUserDefaults.set(value, forKey: "LastDoubleOnStack")
 			} else {
 				textField.text = ""
 			}

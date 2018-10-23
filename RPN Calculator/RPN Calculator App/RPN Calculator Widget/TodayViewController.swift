@@ -10,7 +10,7 @@ import UIKit
 import NotificationCenter
 import RPN_Calculator
 
-class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDelegate {
+class TodayViewController: UIViewController, NCWidgetProviding {
     
     // MARK: - UIViewController
     
@@ -18,7 +18,9 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
         super.viewDidLoad()
         
         self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
-        textField.delegate = self
+        
+        let value = groupUserDefaults.double(forKey: "LastDoubleOnStack")
+        calculator.push(number: value)
     }
     
     
@@ -43,6 +45,8 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
     
     
     // MARK: - Private Properties
+    
+    private let groupUserDefaults = UserDefaults(suiteName: "group.com.SamanthaGatt.RPN_Calculator")!
     
     private let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
