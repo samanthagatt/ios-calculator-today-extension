@@ -42,13 +42,6 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
     }
     
     
-    // MARK: - UITextFieldDelegate
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.selectAll(textField)
-    }
-    
-    
     // MARK: - Private Properties
     
     private let numberFormatter: NumberFormatter = {
@@ -87,6 +80,9 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
     @IBOutlet private weak var secondStackView: UIStackView!
     @IBOutlet private weak var thirdStackView: UIStackView!
     @IBOutlet private weak var fourthStackView: UIStackView!
+    
+    
+    // MARK: - Actions
     
     @IBAction private func numberButtonTapped(_ sender: UIButton) {
         try? digitAccumulator.add(digit: .number(sender.tag))
@@ -127,5 +123,11 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITextFieldDeleg
         calculator.clear()
         digitAccumulator.clear()
         return true
+    }
+    
+    @IBAction func copyToPasteboard(_ sender: Any) {
+        guard let number = textField.text, number != "" else { return }
+        let pasteboard = UIPasteboard.general
+        pasteboard.string = number
     }
 }

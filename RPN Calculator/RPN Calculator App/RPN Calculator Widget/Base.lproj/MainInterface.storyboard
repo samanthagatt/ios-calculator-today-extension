@@ -20,12 +20,24 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="G3z-S0-o3o">
                                 <rect key="frame" x="6.5" y="10" width="307" height="280"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zai-8d-mVo">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="T9I-dQ-9EO">
                                         <rect key="frame" x="0.0" y="0.0" width="307" height="46.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zai-8d-mVo">
+                                                <rect key="frame" x="0.0" y="0.0" width="259" height="46.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJ0-Oa-fmQ">
+                                                <rect key="frame" x="271" y="0.0" width="36" height="46.5"/>
+                                                <state key="normal" title="Copy"/>
+                                                <connections>
+                                                    <action selector="copyToPasteboard:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="PMp-z5-UBx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4Ce-iK-alf">
                                         <rect key="frame" x="0.0" y="58.5" width="307" height="46.5"/>
                                         <subviews>
